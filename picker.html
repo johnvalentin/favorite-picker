@@ -234,11 +234,14 @@ button.disabled:hover {
 'use strict';
 
 var items = [
-    // Define your items here
+    {id: "squirtle"},
+    {id: "wartortle"},
+    {id: "blastoise"},
 ];
 
 var myPicker = new picker.Picker({
-    items: items
+    items: items,
+    localstoragekey: 'picker-state'
 });
 
 var pickerUI = new PickerUI(myPicker, {
